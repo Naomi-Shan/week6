@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me · Shanshan Qiu</title>
+  <meta name="description" content="Get in touch with Shanshan Qiu by email.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / navigation ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SQ</span>
+        Shanshan Qiu
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Say hello</span>
+          <h2>Contact Me</h2>
+          <p>Have a question, want to collaborate, or just say hi? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-wrap reveal">
+          <div class="contact-card">
+            <div class="mail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </div>
+            <p style="margin-bottom:6px;">Reach me at my school email</p>
+            <p class="contact-email">Shanshan.Qiu26@student.xjtlu.edu.cn</p>
+
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:Shanshan.Qiu26@student.xjtlu.edu.cn">
+                Write an email
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <button class="btn btn-outline" id="copyEmail" data-email="Shanshan.Qiu26@student.xjtlu.edu.cn" type="button">
+                Copy email
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SQ</span>
+        Shanshan Qiu
+      </a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+      <p class="copyright">© <span id="year"></span> Shanshan Qiu · Made with warmth</p>
+    </div>
+  </footer>
+
+  <!-- Toast for copy confirmation -->
+  <div class="toast" id="toast">Email copied to clipboard</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

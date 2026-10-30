@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects · Shanshan Qiu</title>
+  <meta name="description" content="Projects by Shanshan Qiu — XJTLU university student.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / navigation ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SQ</span>
+        Shanshan Qiu
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main>
+    <section class="todo-section section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Productivity</span>
+          <h1>My To-Do List</h1>
+          <p>Pick a date on the calendar, type your task, and press Add. Tick the circle when it's done, or tap the X to remove it.</p>
+        </div>
+
+        <div class="todo-app reveal">
+          <!-- Task counter -->
+          <div class="todo-counter">
+            <span class="todo-counter-text" id="todoCounter">0 of 0 tasks completed</span>
+            <div class="todo-progress"><div class="todo-progress-bar" id="todoProgressBar"></div></div>
+          </div>
+
+          <!-- Calendar -->
+          <div class="todo-calendar">
+            <div class="cal-head">
+              <button type="button" class="cal-nav" id="prevMonth" aria-label="Previous month">&lsaquo;</button>
+              <span class="cal-title" id="calTitle">September 2026</span>
+              <button type="button" class="cal-nav" id="nextMonth" aria-label="Next month">&rsaquo;</button>
+            </div>
+            <div class="cal-weekdays">
+              <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <div class="cal-grid" id="calGrid"></div>
+          </div>
+
+          <!-- Task panel -->
+          <div class="todo-panel">
+            <div class="todo-selected">
+              <small>Selected date</small>
+              <strong id="selectedDate">No date selected</strong>
+            </div>
+
+            <form class="todo-form" id="todoForm">
+              <input type="text" id="taskInput" placeholder="What do you need to do?" aria-label="Task description" autocomplete="off" required>
+              <select id="taskPriority" aria-label="Task priority">
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>
+              </select>
+              <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+
+            <ul class="todo-list" id="todoList"></ul>
+
+            <p class="todo-empty" id="todoEmpty">No tasks for this date yet. Add your first one above.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Weather App ===== -->
+    <section class="weather-section section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Project</span>
+          <h1>Weather Finder</h1>
+          <p>Type a city name — any major city in China or around the world — and see the current weather at a glance.</p>
+        </div>
+
+        <div class="weather-app reveal">
+          <form class="weather-form" id="weatherForm">
+            <input
+              type="text"
+              id="cityInput"
+              class="weather-input"
+              placeholder="Enter a city, e.g. Beijing"
+              aria-label="City name"
+              autocomplete="off"
+              spellcheck="false"
+            >
+            <button type="submit" class="btn btn-primary weather-btn" id="weatherSearchBtn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span class="btn-label">Search</span>
+            </button>
+          </form>
+
+          <div class="weather-result" id="weatherResult" aria-live="polite">
+            <!-- Content injected by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== History lesson ===== -->
+    <section class="history-section section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">History Lesson</span>
+          <h1>Two Rivers of Time</h1>
+          <p>A vintage-styled timeline of European and Chinese historical periods, drawn to scale for the classroom.</p>
+        </div>
+
+        <a class="history-card reveal" href="history-lesson.html">
+          <div class="history-art">
+            <svg viewBox="0 0 340 240" role="img" aria-label="A miniature timeline with blue European periods above the line and terracotta Chinese periods below">
+              <rect x="0.5" y="0.5" width="339" height="239" fill="#f4ebda" stroke="#c3ae8c"></rect>
+              <rect x="10.5" y="10.5" width="319" height="219" fill="none" stroke="rgba(150,125,88,0.45)"></rect>
+              <text x="22" y="34" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#8c7557">EUROPE</text>
+              <text x="22" y="226" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#8c7557">CHINA</text>
+              <line x1="20" y1="120" x2="320" y2="120" stroke="#6d573f" stroke-width="1.6"></line>
+              <line x1="20" y1="124" x2="320" y2="124" stroke="#b0894b" stroke-width="1" opacity="0.85"></line>
+              <rect x="26" y="88" width="86" height="22" fill="#dce7e8" stroke="#8ba7b0"></rect>
+              <rect x="118" y="60" width="112" height="22" fill="#dce7e8" stroke="#8ba7b0"></rect>
+              <rect x="176" y="88" width="82" height="22" fill="#dce7e8" stroke="#8ba7b0"></rect>
+              <rect x="240" y="60" width="68" height="22" fill="#dce7e8" stroke="#8ba7b0"></rect>
+              <rect x="40" y="130" width="104" height="22" fill="#efd9cb" stroke="#c2987e"></rect>
+              <rect x="152" y="158" width="92" height="22" fill="#efd9cb" stroke="#c2987e"></rect>
+              <rect x="248" y="130" width="60" height="22" fill="#efd9cb" stroke="#c2987e"></rect>
+              <line x1="60" y1="116" x2="60" y2="126" stroke="#6d573f" stroke-width="1"></line>
+              <line x1="150" y1="116" x2="150" y2="126" stroke="#6d573f" stroke-width="1"></line>
+              <line x1="228" y1="116" x2="228" y2="126" stroke="#6d573f" stroke-width="1"></line>
+              <line x1="292" y1="116" x2="292" y2="126" stroke="#6d573f" stroke-width="1"></line>
+            </svg>
+          </div>
+
+          <div class="history-body">
+            <span class="history-eyebrow">Project &middot; History Lesson</span>
+            <h3>Two Rivers of Time</h3>
+            <p>Europe above the line, China below. Thirty-six dynasties, empires and republics — from the Zhou to the Soviet Union — each anchored to the year it began.</p>
+            <span class="proj-tags">
+              <span>Single HTML file</span>
+              <span>Vanilla JS</span>
+              <span>Vintage style</span>
+            </span>
+            <span class="btn btn-primary history-open">Open the timeline</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SQ</span>
+        Shanshan Qiu
+      </a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+      <p class="copyright">© <span id="year"></span> Shanshan Qiu · Made with warmth</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/main.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js?v=5"></script>
+</body>
+</html>

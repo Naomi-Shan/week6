@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanshan Qiu · Personal Website</title>
+  <meta name="description" content="Hello, I'm Shanshan Qiu — a university student at XJTLU who loves Pilates, travelling and reading.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / navigation ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SQ</span>
+        Shanshan Qiu
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="hello-tag"><span class="dot"></span> Hello there, welcome to my corner of the web</span>
+          <h1>Hi, I'm <span class="accent">Shanshan&nbsp;Qiu</span></h1>
+          <p class="lead">
+            I am a university student at <strong>XJTLU</strong>. I am curious about
+            digital technology and enjoy exploring new knowledge in my daily life.
+            I like to keep a balanced lifestyle and try new things all the time.
+          </p>
+
+          <ul class="hobby-list">
+            <li class="h-pilates">Pilates</li>
+            <li class="h-travel">Travelling</li>
+            <li class="h-read">Reading books</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="resume.html">
+              View my resume
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-outline" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <div class="headshot">
+            <div class="headshot-circle">
+              <!-- ============================================================
+                   YOUR HEADSHOT:
+                   Replace the placeholder below by adding your photo file to
+                   the "assets" folder (e.g. assets/headshot.jpg) and then
+                   uncomment this line (and delete the .headshot-initials div):
+                   <img class="headshot-img" src="assets/headshot.jpg" alt="Portrait of Shanshan Qiu">
+                   ============================================================ -->
+              <span class="headshot-initials">SQ</span>
+              <span class="headshot-hint">Your headshot photo here</span>
+            </div>
+
+            <span class="headshot-badge b1">
+              <span class="emoji-dot" style="background:var(--sage-soft);color:var(--sage);">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg>
+              </span>
+              XJTLU student
+            </span>
+            <span class="headshot-badge b2">
+              <span class="emoji-dot" style="background:var(--gold-soft);color:var(--gold);">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </span>
+              Always learning
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Three things I like ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">A little about me</span>
+          <h2>Three things I like</h2>
+          <p>These keep me balanced, energised, and curious about the world.</p>
+        </div>
+
+        <div class="likes-grid">
+          <article class="card like-card reveal">
+            <div class="like-icon coral">
+              <!-- Pilates icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="4.5" r="2.2"/>
+                <path d="M12 7.5c-2.2 2.4-2.2 5.5 0 8 2.2-2.5 2.2-5.6 0-8z"/>
+                <path d="M5 20c1.6-3 4-4.5 7-4.5s5.4 1.5 7 4.5"/>
+                <path d="M12 12.5V20"/>
+              </svg>
+            </div>
+            <span class="like-num">01</span>
+            <h3>Pilates</h3>
+            <p>Moving mindfully, building strength, and finding a moment of calm in every day.</p>
+          </article>
+
+          <article class="card like-card reveal">
+            <div class="like-icon gold">
+              <!-- Travelling icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16.5c-2.3 1.4-5.2 2-9 2s-6.7-.6-9-2"/>
+                <path d="M3 16.5h18"/>
+                <path d="M3 16.5V11l9-6 9 6v5.5"/>
+                <path d="M9.5 16.5v-5h5v5"/>
+                <path d="M12 5V2.5"/>
+              </svg>
+            </div>
+            <span class="like-num">02</span>
+            <h3>Travelling</h3>
+            <p>Discovering new cities, cultures and cuisines — every trip is a new perspective.</p>
+          </article>
+
+          <article class="card like-card reveal">
+            <div class="like-icon sage">
+              <!-- Reading books icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 6.5C10.5 5 8 4.5 4 4.8v13c4-.3 6.5.2 8 1.7 1.5-1.5 4-2 8-1.7v-13c-4-.3-6.5.2-8 1.7z"/>
+                <path d="M12 6.5v13"/>
+              </svg>
+            </div>
+            <span class="like-num">03</span>
+            <h3>Reading books</h3>
+            <p>Getting lost in a great story and constantly feeding my curiosity for new ideas.</p>
+          </article>
+        </div>
+
+        <!-- Fun fact -->
+        <div class="funfact reveal" style="margin-top:56px;">
+          <div class="funfact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              <path d="M8 7h8M8 11h6"/>
+            </svg>
+          </div>
+          <div>
+            <small>Fun fact about me</small>
+            <p>I can finish reading one full-length novel within a weekend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SQ</span>
+        Shanshan Qiu
+      </a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+      <p class="copyright">© <span id="year"></span> Shanshan Qiu · Made with warmth</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
